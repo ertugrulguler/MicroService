@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="6.1.0" />
+      <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+      <PackageReference Include="MediatR" Version="9.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.3" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+      <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+      <PackageReference Include="Serilog.Enrichers.Environment" Version="2.1.3" />
+      <PackageReference Include="Serilog.Sinks.Debug" Version="1.0.1" />
+      <PackageReference Include="Serilog.Sinks.Elasticsearch" Version="8.4.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Catalog.ApiContract\Catalog.ApiContract.csproj" />
+      <ProjectReference Include="..\Catalog.ApplicationService\Catalog.ApplicationService.csproj" />
+      <ProjectReference Include="..\Catalog.Repository\Catalog.Repository.csproj" />
+    </ItemGroup>
+
+</Project>

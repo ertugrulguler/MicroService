@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <UserSecretsId>c8bb3e4d-c392-4343-bdc5-46f212a8ed1d</UserSecretsId>
+        <ApplicationInsightsResourceId>/subscriptions/b3c52cfa-5bb8-42ad-9123-e4fe2e86bb3a/resourceGroups/rg-topkapi-backend-prod/providers/microsoft.insights/components/app-be-catalog-prod-ai</ApplicationInsightsResourceId>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <DocumentationFile></DocumentationFile>
+      <NoWarn></NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+      <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.17.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.6" />
+      <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.3">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.0-preview.3.21201.13" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Catalog.ApiContract\Catalog.ApiContract.csproj" />
+      <ProjectReference Include="..\Catalog.Container\Catalog.Container.csproj" />
+    </ItemGroup>
+
+   
+
+</Project>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Pagination\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="EFCore.BulkExtensions" Version="3.3.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="5.0.9" />
+      <PackageReference Include="Platform.Framework.Core" Version="1.0.43" />
+    </ItemGroup>
+</Project>
